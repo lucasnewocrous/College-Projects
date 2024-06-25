@@ -1,0 +1,212 @@
+.responsive {
+    width: auto ;
+    height: auto;
+  }
+      *{
+        padding: 0%;
+        margin: 0%;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+        .container1{
+          display:flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          background-color: rgb(251, 233, 211);
+          justify-content: space-evenly;
+          margin: auto;
+        }
+        .container{
+          display:flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          background-color: rgb(251, 233, 211);
+          justify-content: space-between;
+        }
+       
+        div.mycontainer{
+          width: 100%;
+          overflow: auto;
+        }
+  
+        .elemento1{
+        width: 500px;
+        height: 51px;
+        background-color:  rgb(251, 233, 211);
+        margin: auto;
+        
+      }
+      .elemento{
+        width: 500px;
+        height:200px;
+        background-color:  rgb(251, 233, 211);
+        margin: auto;
+        
+      }
+    .containersn{
+      display:flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          background-color: rgb(251, 233, 211);
+          justify-content: center;
+    }
+     .elementosn{
+      max-width: max-content;
+        max-height: max-content;
+        background-color:  rgb(251, 233, 211);
+        margin: auto;
+     }
+  .mySlides {display:flex;
+    justify-content: space-around;
+}
+  img {vertical-align: auto;
+justify-items: center;}
+  
+  
+  .slideshow-container {
+    justify-content: center;
+    max-width: 100%;
+    position: relative;
+  }
+  
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #9a3d15;
+  }
+  
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+    justify-content: space-between;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
+    
+      body {
+         
+     background-color:  rgb(161, 143, 121)}
+    h1 {
+    border: 5px solid rgba(11, 14, 12, 0.411);
+    margin: auto;
+  }
+  ul {
+        background: #252525;
+    justify-content:space-between;
+    
+  }
+  ul li {
+    display: inline-block;
+    position: relative;
+    background: #252525;
+    justify-content: space-between;
+  }
+  ul li a {
+    display:flex;
+    padding: 20px 25px;
+    color:#FFF;
+    text-decoration: none;
+    text-align: center; 
+    font-size: 20px;
+  
+  }
+  ul li ul.dropdown {
+   width: 100%;
+   background: #9a3d15;
+   position:absolute;
+   z-index: 999;
+   display: none;
+   ;
+  }
+  ul li ul.dropdown li {
+    display: block;
+   ;
+  }
+  
+  ul li a:hover {
+    background: #979920;
+    
+  }
+  ul li:hover ul.dropdown {
+    display:block
+  }
+  
+  li a {
+    display: flex;
+    color: white;
+    text-align: center;
+    padding: 14px 95.8px;
+    text-decoration: none;
+    margin: auto;
+    position: center;
+  }
+  
+  li a:hover {
+    background-color: #9a3d15;
+  
+  }
+  footer {
+display: flex;
+background-color: #2e2e2e;
+padding: 20px;
+text-align: center;
+color: white;
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinicao</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="estiloprojetofinal.css">
+ 
+</head>
+<body>
+  <header>
+    <nav>
+  <div class="container1">
+    <div class="elemento1">
+      <img>
+  <img src="C:\Users\lucas\OneDrive\Documentos\ADS\FRONT END\Projeto Site Clinica\Images\local.png" style="top: auto;">
+    </div>
+    <div class="elemento1">
+    </div>
+    <div class="elemento1">
+      <img>
+  <img src="C:\Users\lucas\OneDrive\Documentos\ADS\FRONT END\Projeto Site Clinica\Images\redes sociais.png">
+    </div>
+  </div>
+<div class="container">
+<div class="elemento">
+  <img>
+  <img src="C:\Users\lucas\OneDrive\Documentos\ADS\FRONT END\Projeto Site Clinica\Images\LOGO OFICIAL.png">
+</div>
+</div>
+<div style="padding: 1px;">
+<ul style="text-align: center;"> 
+  <li><a href="#Sobre">Sobre Nós</a></li>
+  <li><a href="#Especialidades">Especialidades</a>
+  <ul class="dropdown">
+    <li><a href="#Especialidades"> Consultas</a></li>
+    <li><a href="#Especialidades"> Banho e Tosa</a></li>
+    <li><a href="#Especialidades"> Cirurgias</a></li>
+    <li><a href="#Especialidades"> Hotel</a></li>
+  </ul>
+  <li><a href="#Produtos">Produtos</a></li>
+  <li><a href="#Nossos Planos">Nossos Planos</a></li>
+  <li><a href="#Cursos">Cursos e Formação</a>
+  <ul class="dropdown">
+    <li><a href="#Cursos"> Nutrição de Cães e Gatos</a></li>
+    <li><a href="#Cursos"> Farmacologia Veterinária</a></li>
+    <li><a href="#Cursos"> Plantão Veterinário</a></li>
+    <li><a href="#Cursos"> Adestramento</a></li>
+  </ul></li>
+  <li><a href="#Contato">Contato</a></li>
+  <li> <form>
+    <input type="text" placeholder="Pesquisar">
+      <button type="button">Pesquisar</button></li>
+    </ul>
+  </nav>
+  <script src="JS/JavaScrt.js"></script>
+</div>
+</header>
+<main>
+<section>
+<div style="text-align: center;" class="slideshow-container">
+    <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="img/clini.jpg" style="width:50%">
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="img/cpa_dsf3153.jpg" style="width:50%">
+    </div>
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="img/pet-shower-limitada_2024-01-04_14-29-30_0173.jpg" style="width:50%">
+    </div>
+  <a class="prev" onclick="plusSlides(-1)"></a>
+    <a class="next" onclick="plusSlides(1)"></a>
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+
+  <script>
+    
+    let slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 5000); // Change image every 2 seconds
+    }
+    </script>
+   </section> 
+   <section>
+<div id="Sobre" style="background-color:rgb(251, 233, 211);" class="containersn">
+  <div class=".elementosn">
+  <img src="img/Sobre Nos.png">
+</div>
+</div>
+<br>
+<div id="Especialidades" style="background-color: rgb(161, 143, 121);"  class="containersn">
+  <div clas="elementosn">
+    <img src="img/Especialidades.png">
+  </div>
+</div>
+<br>
+<div id="Produtos" class="containersn">
+  <div clas="elementosn">
+    <img src="img/produtos.png">
+  </div>
+</div>
+<br>
+<div class="containersn" id="Nossos Planos" style="background-color: rgb(161, 143, 121)";>
+ <div class= "elementosn">
+    <img src="img/planos.png">
+  </div>
+</div>
+<br>
+<div id="Cursos" class="containersn">
+  <div clas="elementosn">
+    <img src="img/cursos.png">
+  </div>
+</div>
+
+   </section>
+  </main>
+   <footer>
+    <div style="position: relative; text-align: left;">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30392.47493931222!2d-50.9396980972927!3d-17.788906773647216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9361db7d2c321dc1%3A0xe7ac78da77d5dc69!2sRio%20Verde%2C%20GO!5e0!3m2!1spt-BR!2sbr!4v1718726184249!5m2!1spt-BR!2sbr" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width= "200" height="150" frameborder= "0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+</div>
+<div style="position: relative; text-align: center;" >
+  <img src="img/footer.png"> 
+</div>   
+</footer>
+
+</body>
+</html>
